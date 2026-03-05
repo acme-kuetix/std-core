@@ -1,0 +1,16 @@
+// SimplifiedWSL example without module keyword
+// Module name will be derived from filename: module_example
+
+import services/common
+
+const {
+    msg: "Hello from module example",
+    code: 200
+}
+
+// Define error handler
+def services/common/errors.OnAnyError(msg: "error", statusCode: 500) as errorHandler -> .
+
+// Main action flow
+converse/speak.Say(on: "message", v: [$constants.msg]) as response <- errorHandler ->
+services/common/response.Response(value: $response.message, statusCode: $constants.code) as finalResponse <- errorHandler -> .
