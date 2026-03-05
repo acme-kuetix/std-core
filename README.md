@@ -18,7 +18,7 @@ The package includes a `runner.sh` script for easy development:
 
 ```bash
 # Run a specific workflow
-./runner.sh run workflows/common/example.wsl
+./runner.sh run workflows/module_example.swsl
 
 # Test all workflows, features, and solutions
 ./runner.sh test
