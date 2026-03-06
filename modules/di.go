@@ -5,8 +5,8 @@ import (
 	di "github.com/kuetix/container"
 	"github.com/kuetix/engine/pkg/defines"
 	"github.com/kuetix/engine/pkg/workflow"
-	transitionsConverse "std-core/modules/converse/transitions"
-	transitionsServicesCommon "std-core/modules/services/common/transitions"
+	transitionsConverse "github.com/kuetix/std-core/modules/converse/transitions"
+	transitionsServicesCommon "github.com/kuetix/std-core/modules/services/common/transitions"
 )
 
 func init() {

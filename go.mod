@@ -1,4 +1,4 @@
-module std-core
+module github.com/kuetix/std-core
 
 go 1.25.1
 

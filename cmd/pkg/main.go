@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"std-core/modules"
+	"github.com/kuetix/std-core/modules"
 
 	"github.com/kuetix/engine"
 	"github.com/kuetix/engine/boot"
