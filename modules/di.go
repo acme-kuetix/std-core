@@ -2,11 +2,11 @@
 package modules
 
 import (
-	transitionsConverse "core/modules/converse/transitions"
-	transitionsServicesCommon "core/modules/services/common/transitions"
 	di "github.com/kuetix/container"
 	"github.com/kuetix/engine/pkg/defines"
 	"github.com/kuetix/engine/pkg/workflow"
+	transitionsConverse "std-core/modules/converse/transitions"
+	transitionsServicesCommon "std-core/modules/services/common/transitions"
 )
 
 func init() {
