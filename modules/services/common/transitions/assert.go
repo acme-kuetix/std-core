@@ -1,6 +1,8 @@
 package transitions
 
 import (
+	"strings"
+
 	"github.com/kuetix/engine/pkg/domain"
 	"github.com/kuetix/engine/pkg/domain/interfaces"
 	"github.com/kuetix/engine/pkg/helpers"
@@ -88,5 +90,16 @@ func (et *assertTransitions) Switch(value string) (r domain.FlowStepResult) {
 func (et *assertTransitions) IsPathExists(value map[string]interface{}, path []string) (r domain.FlowStepResult) {
 	r.Success = helpers.IsPathExists(value, path)
 
+	return
+}
+
+func (et *assertTransitions) NotEmpty(value string) (r domain.FlowStepResult) {
+	value = strings.Trim(value, " ")
+	if value == "" {
+		r.Success = false
+		return
+	}
+
+	r.Success = true
 	return
 }

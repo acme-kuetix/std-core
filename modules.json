@@ -68,6 +68,16 @@
         "description": "Function with 2 input(s) and 1 output(s)"
       },
       {
+        "value": "NotEmpty",
+        "label": "NotEmpty(value)",
+        "description": "Function with 1 input(s) and 1 output(s)"
+      },
+      {
+        "value": "NotEmpty",
+        "label": "NotEmpty(value)",
+        "description": "Function with 1 input(s) and 1 output(s)"
+      },
+      {
         "value": "String",
         "label": "String(value, op)",
         "description": "Function with 2 input(s) and 1 output(s)"

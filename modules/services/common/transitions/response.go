@@ -73,6 +73,8 @@ func (et *responseTransitions) SetValue(name string, value string) (r domain.Flo
 func (et *responseTransitions) Response(value any, statusCode int) (r domain.FlowStepResult) {
 	r.Response = value
 
+	r.StatusCode = statusCode
+
 	if statusCode == -2 {
 		r.StatusCode = http.StatusBadRequest
 	}
