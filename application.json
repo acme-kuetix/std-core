@@ -1,5 +1,5 @@
 {
-  "name": "core",
+  "name": "kuetix/core",
   "type": "package",
   "description": "Kuetix Engine application: core",
   "version": "0.1.0",

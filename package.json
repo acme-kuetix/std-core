@@ -1,5 +1,5 @@
 {
-  "name": "core",
+  "name": "kuetix/core",
   "type": "package",
   "version": "0.1.0",
   "description": "Kuetix engine package: core",
@@ -8,5 +8,5 @@
   "dependencies": {},
   "engine": "v0.1.4",
   "publisher": "",
-  "keywords": ["core", "package", "module"]
+  "keywords": ["kuetix", "kuetix/core","core", "package", "module"]
 }
