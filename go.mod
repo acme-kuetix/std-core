@@ -1,10 +1,12 @@
 module github.com/kuetix/std-core
 
-go 1.25.1
+go 1.26.1
 
 require (
 	github.com/kuetix/container v0.1.0
 	github.com/kuetix/engine v0.1.4
+	github.com/kuetix/helpers v1.0.0
+	github.com/kuetix/logger v1.0.0
 	github.com/mitchellh/mapstructure v1.5.0
 )
 
@@ -26,7 +28,7 @@ require (
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.31.0 // indirect
+	golang.org/x/text v0.35.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 )
 
