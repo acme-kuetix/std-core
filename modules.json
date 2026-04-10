@@ -69,13 +69,13 @@
       },
       {
         "value": "NotEmpty",
-        "label": "NotEmpty(value)",
-        "description": "Function with 1 input(s) and 1 output(s)"
+        "label": "NotEmpty(value, negative)",
+        "description": "Function with 2 input(s) and 1 output(s)"
       },
       {
         "value": "NotEmpty",
-        "label": "NotEmpty(value)",
-        "description": "Function with 1 input(s) and 1 output(s)"
+        "label": "NotEmpty(value, negative)",
+        "description": "Function with 2 input(s) and 1 output(s)"
       },
       {
         "value": "String",
@@ -393,6 +393,11 @@
         "description": "Function with 2 input(s) and 1 output(s)"
       },
       {
+        "value": "ResponseError",
+        "label": "ResponseError(message, code)",
+        "description": "Function with 2 input(s) and 1 output(s)"
+      },
+      {
         "value": "ResponseEntity",
         "label": "ResponseEntity(property, statusCode)",
         "description": "Function with 2 input(s) and 1 output(s)"
@@ -415,6 +420,11 @@
       {
         "value": "ResponseEntity",
         "label": "ResponseEntity(property, statusCode)",
+        "description": "Function with 2 input(s) and 1 output(s)"
+      },
+      {
+        "value": "ResponseError",
+        "label": "ResponseError(message, code)",
         "description": "Function with 2 input(s) and 1 output(s)"
       },
       {

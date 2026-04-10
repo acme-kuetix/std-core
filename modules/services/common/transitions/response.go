@@ -1,11 +1,12 @@
 package transitions
 
 import (
+	"errors"
 	"net/http"
 
-	"github.com/kuetix/engine/pkg/domain"
-	"github.com/kuetix/engine/pkg/domain/interfaces"
-	"github.com/kuetix/engine/pkg/workflow"
+	"github.com/kuetix/engine/engine/domain"
+	"github.com/kuetix/engine/engine/domain/interfaces"
+	"github.com/kuetix/engine/engine/workflow"
 )
 
 type responseTransitions struct {
@@ -83,6 +84,23 @@ func (et *responseTransitions) Response(value any, statusCode int) (r domain.Flo
 	}
 
 	r.Success = true
+	return
+}
+
+func (et *responseTransitions) ResponseError(message string, code int) (r domain.FlowStepResult) {
+	r.Error = errors.New(message)
+	r.Response = message
+
+	r.StatusCode = code
+
+	if code == -2 {
+		r.StatusCode = http.StatusBadRequest
+	}
+	if code == -1 {
+		r.StatusCode = http.StatusOK
+	}
+
+	r.Success = false
 	return
 }
 

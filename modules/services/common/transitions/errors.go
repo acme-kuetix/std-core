@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/kuetix/engine/pkg/domain"
-	"github.com/kuetix/engine/pkg/domain/interfaces"
-	"github.com/kuetix/engine/pkg/workflow"
+	"github.com/kuetix/engine/engine/domain"
+	"github.com/kuetix/engine/engine/domain/interfaces"
+	"github.com/kuetix/engine/engine/workflow"
 	"github.com/kuetix/logger"
 )
 

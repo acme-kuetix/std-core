@@ -3,8 +3,8 @@ package modules
 
 import (
 	di "github.com/kuetix/container"
-	"github.com/kuetix/engine/pkg/defines"
-	"github.com/kuetix/engine/pkg/workflow"
+	"github.com/kuetix/engine/engine/defines"
+	"github.com/kuetix/engine/engine/workflow"
 	transitionsConverse "github.com/kuetix/std-core/modules/converse/transitions"
 	transitionsServicesCommon "github.com/kuetix/std-core/modules/services/common/transitions"
 )

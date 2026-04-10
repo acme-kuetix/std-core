@@ -3,9 +3,9 @@ package transitions
 import (
 	"strings"
 
-	"github.com/kuetix/engine/pkg/domain"
-	"github.com/kuetix/engine/pkg/domain/interfaces"
-	"github.com/kuetix/engine/pkg/workflow"
+	"github.com/kuetix/engine/engine/domain"
+	"github.com/kuetix/engine/engine/domain/interfaces"
+	"github.com/kuetix/engine/engine/workflow"
 	"github.com/kuetix/helpers"
 )
 
@@ -93,10 +93,11 @@ func (et *assertTransitions) IsPathExists(value map[string]interface{}, path []s
 	return
 }
 
-func (et *assertTransitions) NotEmpty(value string) (r domain.FlowStepResult) {
+func (et *assertTransitions) NotEmpty(value string, negative any) (r domain.FlowStepResult) {
 	value = strings.Trim(value, " ")
 	if value == "" {
 		r.Success = false
+		r.Response = negative
 		return
 	}
 
