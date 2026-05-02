@@ -1,1 +1,5 @@
-package http
+package core
+
+import (
+	_ "embed"
+)
