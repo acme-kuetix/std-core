@@ -1,6 +1,8 @@
 package transitions
 
 import (
+	"fmt"
+
 	"github.com/kuetix/engine/engine/domain"
 	"github.com/kuetix/engine/engine/domain/interfaces"
 	"github.com/kuetix/engine/engine/workflow"
@@ -20,6 +22,8 @@ func (t *speakTransitions) Say(on string, v ...any) (r domain.FlowStepResult) {
 	}
 	msg := map[string]interface{}{on: value}
 	// logger.Info("["+on+"] ", msg[on])
+
+	fmt.Printf("[%s] %v\n", on, value)
 
 	r.Success = true
 	r.Response = msg
