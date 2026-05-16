@@ -875,6 +875,32 @@
     },
     "methods": [
       {
+        "value": "CleanupErrors",
+        "label": "CleanupErrors() (r domain.FlowStepResult)",
+        "names": "CleanupErrors() r",
+        "types": "CleanupErrors() domain.FlowStepResult",
+        "description": "Function with 0 input(s) and 1 output(s)",
+        "method": {
+          "go_module": "github.com/kuetix/std-core",
+          "file_path": "modules/services/common/transitions/errors.go",
+          "module_path": "modules",
+          "namespace": "services/common",
+          "class": "errors",
+          "name": "CleanupErrors",
+          "receiver_type": "*errorsTransitions",
+          "num_in": 0,
+          "num_out": 1,
+          "arg_types": null,
+          "return_types": [
+            "domain.FlowStepResult"
+          ],
+          "arg_names": null,
+          "return_names": [
+            "r"
+          ]
+        }
+      },
+      {
         "value": "CriticalFailure",
         "label": "CriticalFailure(notify string, escalate bool) (r domain.FlowStepResult)",
         "names": "CriticalFailure(notify, escalate) r",
@@ -1061,6 +1087,32 @@
             "notify",
             "escalate"
           ],
+          "return_names": [
+            "r"
+          ]
+        }
+      },
+      {
+        "value": "CleanupErrors",
+        "label": "CleanupErrors() (r domain.FlowStepResult)",
+        "names": "CleanupErrors() r",
+        "types": "CleanupErrors() domain.FlowStepResult",
+        "description": "Function with 0 input(s) and 1 output(s)",
+        "method": {
+          "go_module": "github.com/kuetix/std-core",
+          "file_path": "modules/services/common/transitions/errors.go",
+          "module_path": "modules",
+          "namespace": "services/common",
+          "class": "errors",
+          "name": "CleanupErrors",
+          "receiver_type": "*errorsTransitions",
+          "num_in": 0,
+          "num_out": 1,
+          "arg_types": null,
+          "return_types": [
+            "domain.FlowStepResult"
+          ],
+          "arg_names": null,
           "return_names": [
             "r"
           ]

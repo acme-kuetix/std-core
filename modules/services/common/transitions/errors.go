@@ -170,3 +170,10 @@ func (et *errorsTransitions) CriticalFailure(notify string, escalate bool) (r do
 	r.Success = true
 	return
 }
+
+func (et *errorsTransitions) CleanupErrors() (r domain.FlowStepResult) {
+	et.Ctx.Worker.CleanErrors()
+
+	r.Success = true
+	return
+}
