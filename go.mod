@@ -4,7 +4,7 @@ go 1.26.1
 
 require (
 	github.com/kuetix/container v0.1.0
-	github.com/kuetix/engine v0.2.4
+	github.com/kuetix/engine v1.0.0
 	github.com/kuetix/helpers v1.0.0
 	github.com/kuetix/logger v1.0.0
 	github.com/mitchellh/mapstructure v1.5.0
@@ -28,5 +28,3 @@ require (
 	golang.org/x/text v0.35.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 )
-
-replace github.com/kuetix/engine => ../../engine
