@@ -93,6 +93,20 @@ func (et *assertTransitions) IsPathExists(value map[string]interface{}, path []s
 	return
 }
 
+// Equals reports whether value == other. `String(value, op)` above needs
+// op to be a property *name* to look up (`Ctx.GetProperty(op +
+// "|parse|string")`), not a literal to compare against directly - this is
+// the plain, direct "does this string equal that string" a multi-way WSL
+// dispatch needs, given `on success when <<expr>> == true -> State` is
+// unreliable in this engine (see zmist/backend README's "Known engine
+// limitations": it took the "when" branch unconditionally in testing).
+// Chain it: `action services/common/assert.Equals(value: $x, other: "a") as
+// check; on success -> HandleA; on fail -> NextCheck`.
+func (et *assertTransitions) Equals(value string, other string) (r domain.FlowStepResult) {
+	r.Success = value == other
+	return
+}
+
 func (et *assertTransitions) NotEmpty(value string, negative any) (r domain.FlowStepResult) {
 	value = strings.Trim(value, " ")
 	if value == "" {

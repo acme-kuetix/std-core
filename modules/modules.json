@@ -114,6 +114,38 @@
         }
       },
       {
+        "value": "Equals",
+        "label": "Equals(value string, other string) (r domain.FlowStepResult)",
+        "names": "Equals(value, other) r",
+        "types": "Equals(string, string) domain.FlowStepResult",
+        "description": "Function with 2 input(s) and 1 output(s)",
+        "method": {
+          "go_module": "github.com/kuetix/std-core",
+          "file_path": "modules/services/common/transitions/assert.go",
+          "module_path": "modules",
+          "namespace": "services/common",
+          "class": "assert",
+          "name": "Equals",
+          "receiver_type": "*assertTransitions",
+          "num_in": 2,
+          "num_out": 1,
+          "arg_types": [
+            "string",
+            "string"
+          ],
+          "return_types": [
+            "domain.FlowStepResult"
+          ],
+          "arg_names": [
+            "value",
+            "other"
+          ],
+          "return_names": [
+            "r"
+          ]
+        }
+      },
+      {
         "value": "Integer",
         "label": "Integer(value int, op string) (r domain.FlowStepResult)",
         "names": "Integer(value, op) r",
@@ -327,6 +359,38 @@
           "arg_names": [
             "value",
             "path"
+          ],
+          "return_names": [
+            "r"
+          ]
+        }
+      },
+      {
+        "value": "Equals",
+        "label": "Equals(value string, other string) (r domain.FlowStepResult)",
+        "names": "Equals(value, other) r",
+        "types": "Equals(string, string) domain.FlowStepResult",
+        "description": "Function with 2 input(s) and 1 output(s)",
+        "method": {
+          "go_module": "github.com/kuetix/std-core",
+          "file_path": "modules/services/common/transitions/assert.go",
+          "module_path": "modules",
+          "namespace": "services/common",
+          "class": "assert",
+          "name": "Equals",
+          "receiver_type": "*assertTransitions",
+          "num_in": 2,
+          "num_out": 1,
+          "arg_types": [
+            "string",
+            "string"
+          ],
+          "return_types": [
+            "domain.FlowStepResult"
+          ],
+          "arg_names": [
+            "value",
+            "other"
           ],
           "return_names": [
             "r"
@@ -1176,6 +1240,77 @@
           "arg_names": [
             "maxRetries",
             "backoffMs"
+          ],
+          "return_names": [
+            "r"
+          ]
+        }
+      }
+    ]
+  },
+  "services/common/log": {
+    "info": {
+      "go_module": "github.com/kuetix/std-core",
+      "namespace": "services/common",
+      "class": "log",
+      "label": "Log Module",
+      "description": "Handles log operations for services/common service"
+    },
+    "methods": [
+      {
+        "value": "Log",
+        "label": "Log(v *ast.Ellipsis) (r domain.FlowStepResult)",
+        "names": "Log(v) r",
+        "types": "Log(*ast.Ellipsis) domain.FlowStepResult",
+        "description": "Function with 1 input(s) and 1 output(s)",
+        "method": {
+          "go_module": "github.com/kuetix/std-core",
+          "file_path": "modules/services/common/transitions/log.go",
+          "module_path": "modules",
+          "namespace": "services/common",
+          "class": "log",
+          "name": "Log",
+          "receiver_type": "*logTransitions",
+          "num_in": 1,
+          "num_out": 1,
+          "arg_types": [
+            "*ast.Ellipsis"
+          ],
+          "return_types": [
+            "domain.FlowStepResult"
+          ],
+          "arg_names": [
+            "v"
+          ],
+          "return_names": [
+            "r"
+          ]
+        }
+      },
+      {
+        "value": "Log",
+        "label": "Log(v *ast.Ellipsis) (r domain.FlowStepResult)",
+        "names": "Log(v) r",
+        "types": "Log(*ast.Ellipsis) domain.FlowStepResult",
+        "description": "Function with 1 input(s) and 1 output(s)",
+        "method": {
+          "go_module": "github.com/kuetix/std-core",
+          "file_path": "modules/services/common/transitions/log.go",
+          "module_path": "modules",
+          "namespace": "services/common",
+          "class": "log",
+          "name": "Log",
+          "receiver_type": "*logTransitions",
+          "num_in": 1,
+          "num_out": 1,
+          "arg_types": [
+            "*ast.Ellipsis"
+          ],
+          "return_types": [
+            "domain.FlowStepResult"
+          ],
+          "arg_names": [
+            "v"
           ],
           "return_names": [
             "r"
